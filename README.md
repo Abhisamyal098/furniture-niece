@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FurniCraft - E-commerce Platform for Furniture
 
 FurniCraft is a full-stack e-commerce platform built with Node.js, Express, and MongoDB. It provides a complete solution for selling furniture online, including user authentication, product management, shopping cart, order processing, and payment integration.
@@ -146,3 +147,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request 
+=======
+# furniture-niece
+>>>>>>> d8f94d7c80a2bba7908c80016b3fde40f6d07de4
