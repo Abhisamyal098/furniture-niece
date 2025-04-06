@@ -1,0 +1,262 @@
+/* Order Confirmation Section */
+.confirmation-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.confirmation-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Confirmation Header */
+.confirmation-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.confirmation-header i {
+    font-size: 64px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.confirmation-header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.confirmation-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Confirmation Details */
+.confirmation-details {
+    margin-bottom: 40px;
+}
+
+.order-summary,
+.shipping-info,
+.payment-info,
+.order-items {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-summary h2,
+.shipping-info h2,
+.payment-info h2,
+.order-items h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.order-number,
+.order-date,
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.order-number span,
+.order-date span,
+.order-total span {
+    color: #666;
+}
+
+.order-number strong,
+.order-date strong,
+.order-total strong {
+    color: #333;
+    font-weight: 500;
+}
+
+.info-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.info-content p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.info-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Order Items */
+.items-list {
+    display: grid;
+    gap: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.order-item-details {
+    flex: 1;
+}
+
+.order-item-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.order-item-price {
+    color: #666;
+}
+
+.order-item-quantity {
+    color: #666;
+}
+
+/* Next Steps */
+.next-steps {
+    margin-bottom: 40px;
+}
+
+.next-steps h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step i {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.continue-shopping-btn,
+.track-order-btn {
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.continue-shopping-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.continue-shopping-btn:hover {
+    background-color: #0056b3;
+}
+
+.track-order-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.track-order-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .confirmation-container {
+        padding: 20px;
+    }
+
+    .confirmation-header h1 {
+        font-size: 28px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .continue-shopping-btn,
+    .track-order-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+} 

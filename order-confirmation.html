@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - FurniCraft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order-confirmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <h1>FurniCraft</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for furniture...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                    <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Order Confirmation Section -->
+    <section class="confirmation-section">
+        <div class="container">
+            <div class="confirmation-container">
+                <div class="confirmation-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h1>Thank You for Your Order!</h1>
+                    <p>Your order has been successfully placed and is being processed.</p>
+                </div>
+
+                <div class="confirmation-details">
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="order-number">
+                            <span>Order Number:</span>
+                            <strong id="orderNumber">#123456789</strong>
+                        </div>
+                        <div class="order-date">
+                            <span>Order Date:</span>
+                            <strong id="orderDate">March 15, 2024</strong>
+                        </div>
+                        <div class="order-total">
+                            <span>Total Amount:</span>
+                            <strong id="orderTotal">$989.98</strong>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info">
+                        <h2>Shipping Information</h2>
+                        <div class="info-content" id="shippingInfo">
+                            <!-- Shipping information will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="payment-info">
+                        <h2>Payment Information</h2>
+                        <div class="info-content" id="paymentInfo">
+                            <!-- Payment information will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="order-items">
+                        <h2>Order Items</h2>
+                        <div class="items-list" id="orderItems">
+                            <!-- Order items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h2>What's Next?</h2>
+                    <div class="steps-grid">
+                        <div class="step">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Order Confirmation</h3>
+                            <p>You'll receive an email confirmation with your order details.</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-truck"></i>
+                            <h3>Shipping Updates</h3>
+                            <p>We'll keep you informed about your order's shipping status.</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-box-open"></i>
+                            <h3>Delivery</h3>
+                            <p>Your items will be delivered to your specified address.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="index.html" class="continue-shopping-btn">Continue Shopping</a>
+                    <a href="#" class="track-order-btn">Track Your Order</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>FurniCraft is your one-stop destination for premium furniture. We offer high-quality, stylish furniture for every room in your home.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@furnicraft.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FurniCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/order-confirmation.js"></script>
+</body>
+</html> 
